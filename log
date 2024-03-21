@@ -1255,3 +1255,23 @@ exercises.c:131:109: error: suggest parentheses around ‘&&’ within ‘||’ 
 cc1: all warnings being treated as errors
 Compilation failed
 8266746
+Thu 21 Mar 2024 08:47:43 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:12: error: dereferencing ‘void *’ pointer [-Werror]
+  131 |         if(*top(pila) == '(' && *elemento != ')' || *top(pila) == '[' && *elemento != ']' || *top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |            ^~~~~~~~~~
+exercises.c:131:12: error: void value not ignored as it ought to be
+exercises.c:131:53: error: dereferencing ‘void *’ pointer [-Werror]
+  131 |         if(*top(pila) == '(' && *elemento != ')' || *top(pila) == '[' && *elemento != ']' || *top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                                                     ^~~~~~~~~~
+exercises.c:131:53: error: void value not ignored as it ought to be
+exercises.c:131:94: error: dereferencing ‘void *’ pointer [-Werror]
+  131 |         if(*top(pila) == '(' && *elemento != ')' || *top(pila) == '[' && *elemento != ']' || *top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                                                                                              ^~~~~~~~~~
+exercises.c:131:94: error: void value not ignored as it ought to be
+cc1: all warnings being treated as errors
+Compilation failed
+feb35ef
