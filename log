@@ -1016,3 +1016,16 @@ Thu 21 Mar 2024 07:56:11 PM UTC:
  tests:  3|2
 total_score: 30/70
 3a20e96
+Thu 21 Mar 2024 08:01:11 PM UTC: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:86:21: error: called object ‘next’ is not a function or function pointer
+   86 |         int *next = next(L);
+      |                     ^~~~
+exercises.c:86:14: note: declared here
+   86 |         int *next = next(L);
+      |              ^~~~
+Compilation failed
+8c2acb5
