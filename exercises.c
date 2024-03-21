@@ -128,7 +128,7 @@ int parentesisBalanceados(char *cadena) {
         }
       else
       {
-        if(*elemento != top(pila))
+        if(*elemento != *(top(pila)))
         {
           return 0;
         }
