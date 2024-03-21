@@ -956,3 +956,8 @@ exercises.c:100:18: error: ‘P3’ undeclared (first use in this function); did
 exercises.c:100:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b2e2c4d
+Thu 21 Mar 2024 07:36:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+15d4274
