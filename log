@@ -1299,3 +1299,27 @@ exercises.c:131:136: error: suggest parentheses around ‘&&’ within ‘||’ 
 cc1: all warnings being treated as errors
 Compilation failed
 a5dfad5
+Thu 21 Mar 2024 08:48:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:12: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  131 |         if((char) top(pila) == '(' && *elemento != ')' || (char) top(pila) == '[' && *elemento != ']' || (char) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |            ^
+exercises.c:131:59: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  131 |         if((char) top(pila) == '(' && *elemento != ')' || (char) top(pila) == '[' && *elemento != ']' || (char) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                                                           ^
+exercises.c:131:36: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  131 |         if((char) top(pila) == '(' && *elemento != ')' || (char) top(pila) == '[' && *elemento != ']' || (char) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+exercises.c:131:106: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  131 |         if((char) top(pila) == '(' && *elemento != ')' || (char) top(pila) == '[' && *elemento != ']' || (char) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                                                                                                          ^
+In file included from test.c:5:
+exercises.c:131:130: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  131 |         if((char) top(pila) == '(' && *elemento != ')' || (char) top(pila) == '[' && *elemento != ']' || (char) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e8a1202
