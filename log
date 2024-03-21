@@ -1340,3 +1340,20 @@ exercises.c:131:106: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 d24a8b4
+Thu 21 Mar 2024 08:56:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:23: error: comparison between pointer and integer [-Werror]
+  131 |         if((top(pila) == '(' && *elemento != ')') ||(top(pila) == '[' && *elemento != ']') || (top(pila) == '{' && *elemento != '}'))
+      |                       ^~
+exercises.c:131:64: error: comparison between pointer and integer [-Werror]
+  131 |         if((top(pila) == '(' && *elemento != ')') ||(top(pila) == '[' && *elemento != ']') || (top(pila) == '{' && *elemento != '}'))
+      |                                                                ^~
+exercises.c:131:106: error: comparison between pointer and integer [-Werror]
+  131 |         if((top(pila) == '(' && *elemento != ')') ||(top(pila) == '[' && *elemento != ']') || (top(pila) == '{' && *elemento != '}'))
+      |                                                                                                          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+eed120e
