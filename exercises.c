@@ -133,7 +133,7 @@ int parentesisBalanceados(char *cadena) {
           return 0;
         }
       }
-      elemento = cadena + 1;
+      elemento += 1;
     }
   if (top(pila) != NULL)
   {
