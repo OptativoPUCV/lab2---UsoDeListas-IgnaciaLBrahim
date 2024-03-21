@@ -1423,3 +1423,15 @@ Thu 21 Mar 2024 09:03:40 PM UTC:
  tests:  9|0
 total_score: 70/70
 5135014
+Thu 21 Mar 2024 09:04:31 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:13: error: dereferencing ‘void *’ pointer [-Werror]
+  131 |         if((*(top(pila)) == '(' && *elemento != ')') ||(*(char *)top(pila) == '[' && *elemento != ']') || (*(char *)top(pila) == '{' && *elemento != '}'))
+      |             ^~~~~~~~~~~~
+exercises.c:131:13: error: void value not ignored as it ought to be
+cc1: all warnings being treated as errors
+Compilation failed
+ae04081
