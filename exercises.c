@@ -50,6 +50,7 @@ List* crea_lista() {
       pushFront(L, element);
       element = next(L);
     }
+  imprime_lista(L);
    return L;
 }
 
