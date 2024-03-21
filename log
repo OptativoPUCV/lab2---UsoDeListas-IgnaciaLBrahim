@@ -1198,3 +1198,14 @@ arraylist.h:10:19: note: expected ‘List *’ but argument is of type ‘char *
 cc1: all warnings being treated as errors
 Compilation failed
 86c8ea5
+Thu 21 Mar 2024 08:34:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:122:20: error: initialization of ‘char *’ from ‘char’ makes pointer from integer without a cast [-Werror=int-conversion]
+  122 |   char *elemento = cadena[0];
+      |                    ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+31d459c
