@@ -1180,3 +1180,21 @@ exercises.c:131:25: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 922c5b0
+Thu 21 Mar 2024 08:33:38 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:122:26: error: passing argument 1 of ‘first’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  122 |   char *elemento = first(cadena);
+      |                          ^~~~~~
+      |                          |
+      |                          char *
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:10:19: note: expected ‘List *’ but argument is of type ‘char *’
+   10 | void* first(List *L);
+      |             ~~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+86c8ea5
