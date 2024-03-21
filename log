@@ -979,3 +979,13 @@ Thu 21 Mar 2024 07:40:37 PM UTC:
  tests:  2|3
 total_score: 20/70
 8548056
+Thu 21 Mar 2024 07:44:38 PM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:95:38: error: expected statement before ‘)’ token
+   95 |   while((elemento = top(P1)) != NULL))
+      |                                      ^
+Compilation failed
+d2655d2
