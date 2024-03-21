@@ -1043,3 +1043,9 @@ exercises.c:86:14: error: unused variable ‘next_elem’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 db2e90a
+Thu 21 Mar 2024 08:01:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|2
+total_score: 30/70
+8cb203b
