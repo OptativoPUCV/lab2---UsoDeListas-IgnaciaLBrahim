@@ -944,3 +944,15 @@ Thu 21 Mar 2024 07:30:59 PM UTC:
  tests:  2|3
 total_score: 20/70
 8440bcb
+Thu 21 Mar 2024 07:36:23 PM UTC: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:100:18: error: ‘P3’ undeclared (first use in this function); did you mean ‘P2’?
+  100 |   elemento = pop(P3);
+      |                  ^~
+      |                  P2
+exercises.c:100:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+b2e2c4d

@@ -78,6 +78,7 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
+  
 
 }
 
@@ -89,6 +90,18 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
+  Stack* pila_3 = create_stack();
+  int *elemento = pop(P1);
+  while(elemento != NULL)
+    {
+      push(pila_3, elemento);
+    }
+
+  elemento = pop(P3);
+  while(elemento != NULL)
+    {
+      push(P2, elemento);
+    }
 }
 
 /*
