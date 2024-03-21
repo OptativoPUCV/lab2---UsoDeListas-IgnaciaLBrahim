@@ -132,6 +132,10 @@ int parentesisBalanceados(char *cadena) {
         {
           return 0;
         }
+        else
+        {
+          pop(top(pila));
+        }
       }
       elemento += 1;
     }
