@@ -1029,3 +1029,17 @@ exercises.c:86:14: note: declared here
       |              ^~~~
 Compilation failed
 8c2acb5
+Thu 21 Mar 2024 08:01:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:88:18: error: assignment to ‘int *’ from incompatible pointer type ‘void * (*)(List *)’ [-Werror=incompatible-pointer-types]
+   88 |         elemento = next;
+      |                  ^
+exercises.c:86:14: error: unused variable ‘next_elem’ [-Werror=unused-variable]
+   86 |         int *next_elem = next(L);
+      |              ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+db2e90a
