@@ -914,3 +914,21 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 6e22cf3
+Thu 21 Mar 2024 07:29:09 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:50:19: error: passing argument 2 of ‘pushBack’ makes pointer from integer without a cast [-Werror=int-conversion]
+   50 |       pushBack(L, *element);
+      |                   ^~~~~~~~
+      |                   |
+      |                   int
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:20:30: note: expected ‘void *’ but argument is of type ‘int’
+   20 | void pushBack(List *L, void *dato);
+      |                        ~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+086438a
