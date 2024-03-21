@@ -1275,3 +1275,27 @@ exercises.c:131:94: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 feb35ef
+Thu 21 Mar 2024 08:48:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:31: error: comparison between pointer and integer [-Werror]
+  131 |         if((char *) top(pila) == '(' && *elemento != ')' || (char *) top(pila) == '[' && *elemento != ']' || (char *) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                               ^~
+exercises.c:131:80: error: comparison between pointer and integer [-Werror]
+  131 |         if((char *) top(pila) == '(' && *elemento != ')' || (char *) top(pila) == '[' && *elemento != ']' || (char *) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                                                                                ^~
+exercises.c:131:38: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  131 |         if((char *) top(pila) == '(' && *elemento != ')' || (char *) top(pila) == '[' && *elemento != ']' || (char *) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from test.c:5:
+exercises.c:131:129: error: comparison between pointer and integer [-Werror]
+  131 |         if((char *) top(pila) == '(' && *elemento != ')' || (char *) top(pila) == '[' && *elemento != ']' || (char *) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                                                                                                                                 ^~
+exercises.c:131:136: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  131 |         if((char *) top(pila) == '(' && *elemento != ')' || (char *) top(pila) == '[' && *elemento != ']' || (char *) top(pila) == '{' && *elemento != '}' || top(pila) == NULL)
+      |                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a5dfad5
